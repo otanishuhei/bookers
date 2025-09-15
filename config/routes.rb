@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  get '/bookers' => 'homes#top' 
+  root to: 'homes#top' 
 
-  scope '/bookers' do
-    resources :books
-  end
+  resources :books
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
